@@ -19,7 +19,7 @@ import Login from './Home/LoginRegiser';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={import.meta.env.DEV ? '/' : '/Week-3/'}>
         <div><Navbar /></div>
         <Routes>
           <Route path='/' element={< Home />}></Route>  
